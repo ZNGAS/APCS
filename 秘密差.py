@@ -1,8 +1,11 @@
 #c290. APCS 2017-0304-1秘密差
 #https://zerojudge.tw/ShowProblem?problemid=c290
-num = input()
-d,p = 0,0
-for index,i in enumerate(num):
-    if index%2 == 0:d+=int(i)
-    else:p+=int(i)
-print(abs(p-d))
+a = input()
+ans1 = ans2 = 0
+for i in range(1,len(a),2):
+    print(a[i])
+    ans1 += int(a[i])
+for i in range(0,len(a),2):
+    print(a[i])
+    ans2 += int(a[i])
+print(abs(ans1-ans2))
